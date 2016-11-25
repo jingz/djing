@@ -1,0 +1,398 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="./libs/bulma.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="./libs/flatpickr.min.css" type="text/css" media="screen" charset="utf-8">
+
+    <link rel="stylesheet" href="./paperform/bulma_paper_form.css" type="text/css" media="screen" charset="utf-8">
+
+    <script src="./libs/flatpickr.js" type="text/javascript" charset="utf-8"></script>
+    <title>Paper Form</title>
+</head>
+<body>
+    <div class="container">
+        <section class='section'>
+        <h1 class='title'>Example Client Paper Form</h1>
+        <form class='paper-form'>
+        <strong class='subtitle'>General Information</strong>
+        <div class='columns is-gapless is-multiline'>
+            <div class='column is-3'>
+                <label class='label'>Branch</label>
+                <p class='control'>
+                    <select>
+                        <option>HEAD</option>
+                        <option>Branch 1</option>
+                    </select>
+                </p>
+            </div>
+            <div class='column'>
+                <label class='label'>Code</label>
+                <p class='control'>
+                <input class='input' type='text' />
+                </p>
+            </div>
+            <div class='column is-2'>
+                <label class='label'>ID Type</label>
+                <p class='control'>
+                    <select>
+                        <option>Identity</option>
+                        <option>Passport</option>
+                        <option>Institute</option>
+                    </select>
+                </p>
+            </div>
+            <div class='column is-2'>
+                <label class='label'>Expired Date</label>
+                <p class='control'>
+                    <input id='flatpickr' class='input' type='text' />
+                </p>
+            </div>
+            <script type="text/javascript" charset="utf-8">
+                document.getElementById('flatpickr').flatpickr();
+            </script>
+            <div class='column is-2'>
+                <label class='label'>Birth Date</label>
+                <p class='control'>
+                <input id='birth-date' class='input' type='text' />
+                <span class="help is-danger">This date is invalid</span>
+                </p>
+            </div>
+            <script type="text/javascript" charset="utf-8">
+                document.getElementById('birth-date').flatpickr();
+            </script>
+            <div class='column is-3'>
+                <label class='label'>Title</label>
+                <p class='control'>
+                    <label class='radio'>
+                        <input type='radio' name='title_name' /> Mr.
+                    </label>
+                    <label class='radio'>
+                        <input type='radio' name='title_name' /> Mrs.
+                    </label>
+                    <label class='radio'>
+                        <input type='radio' name='title_name' /> Miss
+                    </label>
+                </p>
+            </div>
+            <div class='column'>
+                <label class='label'>ID No</label>
+                <p class='control'>
+                <input class='input' type='text' />
+                </p>
+            </div>
+            <div class='column'>
+                <label class='label'>First Name</label>
+                <p class='control'>
+                <input class='input' type='text' />
+                </p>
+            </div>
+            <div class='column'>
+                <label class='label'>Last Name</label>
+                <p class='control'>
+                <input class='input' type='text' />
+                </p>
+            </div>
+            <div class='breakrow is-desktop'></div>
+            <div class='column is-one-third'>
+                <label class='label'>Gender</label>
+                <p class='control'>
+                    <label class='radio'>
+                        <input type='radio' name='gender' /> Male
+                    </label>
+                    <label class='radio'>
+                        <input type='radio' name='gender' /> Female
+                    </label>
+                    <label class='radio'>
+                        <input type='radio' name='gender' /> Other
+                    </label>
+                </p>
+            </div>
+            <div class='column'>
+                <label class='label'>Customer Type</label>
+                <p class='control'>
+                    <select>
+                        <option>Port</option>
+                        <option>Institute</option>
+                        <option>Sub-Broker</option>
+                        <option>Sub-Broker</option>
+                    </select>
+                </p>
+            </div>
+        </div>
+
+        <strong class='subtitle'>Occupation Information</strong>
+        <div class='columns is-gapless is-multiline'>
+            <div class='column is-half'>
+                <label class='label'>Employee Status</label>
+                <p class='control'>
+                    <select>
+                        <option>None Employee</option>
+                        <option>Employee</option>
+                    </select>
+                </p>
+            </div>
+            <div class='column is-half'>
+                <label class='label'>Parent Group</label>
+                <p class='control'>
+                    <input type='text' class='input' />
+                </p>
+            </div>
+            <div class='column is-half'>
+                <label class='label'>Occupation</label>
+                <p class='control'>
+                    <select>
+                        <option>None Employee</option>
+                        <option>Employee</option>
+                    </select>
+                </p>
+            </div>
+            <div class='column is-half'>
+                <label class='label'>Business Type</label>
+                <p class='control'>
+                    <select>
+                        <option>Bank</option>
+                        <option>IT</option>
+                    </select>
+                </p>
+            </div>
+            <div class='column is-half'>
+                <label class='label'>Nationality</label>
+                <p class='control'>
+                    <select>
+                        <option>Thai</option>
+                        <option>Non-Thai</option>
+                    </select>
+                </p>
+            </div>
+            <div class='column is-half'>
+                <label class='label'>Business Description</label>
+                <p class='control'>
+                    <input class='input' type='text' />
+                </p>
+            </div>
+            <div class='column is-half'>
+                <label class='label'>Tax No</label>
+                <p class='control'>
+                    <input class='input' type='text' value='3101300095494' />
+                </p>
+            </div>
+            <div class='column is-half'>
+                <label class='label'>Corporation Type</label>
+                <p class='control'>
+                    <select>
+                        <option>Bank of Thailand</option>
+                        <option>Financial Institution</option>
+                    </select>
+                </p>
+            </div>
+            <div class='column is-half'>
+                <label class='label'>WHO Tax</label>
+                <p class='control'>
+                    <select>
+                        <option>Yes</option>
+                        <option>No</option>
+                        <option>Other</option>
+                    </select>
+                </p>
+            </div>
+            <div class='column'>
+                <label class='label'>Tax Rate</label>
+                <p class='control'>
+                    <select>
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </p>
+            </div>
+        </div>
+
+        <strong class='subtitle'>Address Information</strong>
+        <div class='columns is-gapless is-multiline'>
+            <div class='column is-12'>
+                <label class='label'>Main Address</label>
+                <p class='control'>
+                <textarea class='textarea'></textarea>
+                </p>
+            </div>
+            <div class='column'>
+                <label class='label'>Email</label>
+                <p class='control'>
+                <input class='input' type='text' />
+                </p>
+            </div>
+            <div class='column'>
+                <label class='label'>ZIP CODE</label>
+                <p class='control'>
+                <input class='input' type='text' />
+                </p>
+            </div>
+            <div class='column'>
+                <label class='label'>Fax</label>
+                <p class='control'>
+                <input class='input' type='text' />
+                </p>
+            </div>
+            <div class='column'>
+                <label class='label'>Reference Person</label>
+                <p class='control'>
+                <input class='input' type='text' />
+                </p>
+            </div>
+            <div class='column'>
+                <label class='label'>Reference Tel</label>
+                <p class='control'>
+                <input class='input' type='text' />
+                </p>
+            </div>
+        </div>
+
+        <strong class='subtitle'>Specific Information</strong>
+        <div class='columns is-gapless is-multiline'>
+            <div class='column is-one-third'>
+                <label class='label'>Test</label>
+                <p class='control'>
+                <input class='input' type='text' />
+                </p>
+            </div>
+            <div class='column is-one-third'>
+                <label class='label'>Test</label>
+                <p class='control'>
+                    <span class=''>
+					<select>
+						<option value="Afghanistan" title="Afghanistan">Afghanistan</option>
+						<option value="Åland Islands" title="Åland Islands">Aland Islands</option>
+						<option value="Albania" title="Albania">Albania</option>
+						<option value="Algeria" title="Algeria">Algeria</option>
+						<option value="American Samoa" title="American Samoa">American Samoa</option>
+						<option value="Andorra" title="Andorra">Andorra</option>
+						<option value="Angola" title="Angola">Angola</option>
+						<option value="Anguilla" title="Anguilla">Anguilla</option>
+						<option value="Antarctica" title="Antarctica">Antarctica</option>
+						<option value="Antigua and Barbuda" title="Antigua and Barbuda">Antigua and Barbuda</option>
+						<option value="Argentina" title="Argentina">Argentina</option>
+						<option value="Armenia" title="Armenia">Armenia</option>
+						<option value="Aruba" title="Aruba">Aruba</option>
+						<option value="Australia" title="Australia">Australia</option>
+						<option value="Austria" title="Austria">Austria</option>
+						<option value="Azerbaijan" title="Azerbaijan">Azerbaijan</option>
+						<option value="Bahamas" title="Bahamas">Bahamas</option>
+						<option value="Bahrain" title="Bahrain">Bahrain</option>
+						<option value="Bangladesh" title="Bangladesh">Bangladesh</option>
+						<option value="Barbados" title="Barbados">Barbados</option>
+						<option value="Belarus" title="Belarus">Belarus</option>
+						<option value="Belgium" title="Belgium">Belgium</option>
+						<option value="Belize" title="Belize">Belize</option>
+						<option value="Benin" title="Benin">Benin</option>
+						<option value="Bermuda" title="Bermuda">Bermuda</option>
+						<option value="Bhutan" title="Bhutan">Bhutan</option>
+						<option value="Bolivia, Plurinational State of" title="Bolivia, Plurinational State of">Bolivia, Plurinational State of</option>
+						<option value="Bonaire, Sint Eustatius and Saba" title="Bonaire, Sint Eustatius and Saba">Bonaire, Sint Eustatius and Saba</option>
+                    </select>
+                    </span>
+                </p>
+            </div>
+            <div class='column is-one-third'>
+                <label class='label'>Email</label>
+                <p class='control'>
+                    <input class='input' type='text' />
+                    <span class="help is-danger">This email is invalid</span>
+                </p>
+            </div>
+            <div class='column'>
+                <label class='label'>Sending Email</label>
+                <p class='control'>
+                    <label class='checkbox'>
+                        <input type='checkbox' /> Mail
+                    </label>
+                    <label class='checkbox'>
+                        <input type='checkbox' />
+                        Address
+                    </label>
+                    <label class='checkbox'>
+                        <input type='checkbox' />
+                        Extra
+                    </label>
+                </p>
+            </div>
+            <div class='column is-12'>
+                <label class='label'>Sending Email</label>
+                <p class='control'>
+                    <textarea class='textarea'>Textarea Example</textarea>
+                </p>
+            </div>
+            <div class='column is-12'>
+                <label class='label'>Sending Email</label>
+                <p class='control'>
+                    <textarea class='textarea'>Textarea Example</textarea>
+                </p>
+            </div>
+        </div>
+
+        <strong class='subtitle'>Term Of Service</strong>
+        <div class='columns is-gapless is-multiline'>
+            <div class='column'>
+                <p class='control'>
+                    <label class='checkbox'>
+                        <input type='checkbox' /> I/We confirm having read and understood the account rules of The Banking Corporation Limited ('the Bank'), and hereby agree to be bound by the terms and conditions and amendments governing the account(s) issued by the Bank from time-to-time.
+                    </label>
+                </p>
+            </div>
+        </div>
+        </form>
+    </section>
+    </div>
+
+<script type="text/javascript" charset="utf-8">
+(function(){
+    var gridBlocks = document.getElementsByClassName("paper-form")[0].getElementsByClassName("column");
+
+    var resetBlockFocus = function(){
+        for(var i = 0; i < gridBlocks.length; i++){
+            var _b = gridBlocks[i]; 
+            _b.classList.remove("is-focusing");
+        }
+    }
+
+    for(var i = 0; i < gridBlocks.length; i++){
+        (function(){
+            var block = gridBlocks[i]; 
+            var inputs = block.getElementsByTagName("input");
+            if(inputs.length == 0){
+                inputs = block.getElementsByTagName("select");
+            }
+            if(inputs.length == 0){
+                inputs = block.getElementsByTagName("textarea");
+            }
+
+            for(var j = 0; j < inputs.length; j++){
+                (function(){
+                    var input = inputs[j];
+                    // init events
+                    input.onblur = resetBlockFocus;
+
+                    input.onfocus = function(){
+                        block.classList.add("is-focusing");
+                    }
+
+                    // delegate event to inputs
+                    block.onclick = function(e){ 
+                        resetBlockFocus();
+                        // prevent checkbox and radio focusing effect
+                        if(input.type !== 'checkbox' && input.type !== 'radio') {
+                            input.focus(); 
+                        } else {
+                            block.classList.add("is-focusing");
+                        }
+                    }
+                })();
+            }
+        })();
+    }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+.paper-form .columns {
+  border-top: 3px solid black; }
+@media screen and (min-width: 768px) {
+  .paper-form .breakrow {
+    flex: none;
+    width: 100%;
+    visibility: hidden;
+    margin-top: -1000px; } }
+.paper-form .column:hover {
+  background-color: #fffded; }
+.paper-form .column.is-focusing {
+  background-color: #fffad4; }
+  .paper-form .column.is-focusing:hover {
+    background-color: #fffad4; }
+  .paper-form .column.is-focusing label {
+    color: #262626; }
+.paper-form .column {
+  border: 0.5px solid black;
+  padding-bottom: 0.3em !important;
+  cursor: text; }
+  .paper-form .column:hover {
+    background-color: #fffded; }
+  .paper-form .column label.label {
+    color: #484848;
+    font-weight: normal;
+    text-transform: uppercase;
+    cursor: text;
+    font-size: 0.7em;
+    margin-left: 10px;
+    margin-top: 0.5rem;
+    padding-left: 0px; }
+  .paper-form .column input[type='text'] {
+    padding: 0px;
+    border: 0px;
+    font-size: 1.2em;
+    margin-left: 10px;
+    background-color: transparent;
+    box-shadow: none;
+    color: black;
+    margin-top: -0.3em;
+    width: calc(100% - 15px); }
+  .paper-form .column textarea.textarea {
+    padding: 0px;
+    border: 0px;
+    font-size: 1.2em;
+    margin-left: 10px;
+    background-color: transparent;
+    box-shadow: none;
+    color: black;
+    padding-left: 0px;
+    padding-bottom: 0.3em;
+    min-width: calc(100% - 15px);
+    width: calc(100% - 15px);
+    color: black;
+    min-height: 2.7em !important; }
+  .paper-form .column select {
+    font-size: 1.2em;
+    margin-left: 10px;
+    width: calc(100% - 15px);
+    cursor: pointer; }
+  .paper-form .column input[type='checkbox'], .paper-form .column input[type='radio'] {
+    font-size: 1.2em;
+    margin-left: 10px; }
+  .paper-form .column label.checkbox, .paper-form .column label.radio {
+    margin-top: 0.3em; }
+  .paper-form .column .control {
+    min-height: 1.9em; }
+  .paper-form .column .control:first-child {
+    padding: 0.5em; }
+  .paper-form .column input ~ .help.is-danger {
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    margin-top: -1em;
+    margin-left: 1em; }
+
+/*# sourceMappingURL=bulma_paper_form.css.map */

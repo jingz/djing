@@ -1,0 +1,80 @@
+$label-font-size: 0.7em
+$input-font-size: 1.2em
+$input-margin-left: 10px
+$input-color: black
+$gap-width: calc(100% - #{$input-margin-left + 5px})
+$control-height: $input-font-size + 0.7em
+
+=_base_input_reset()
+    padding: 0px
+    border: 0px
+    font-size: $input-font-size
+    margin-left: $input-margin-left
+    background-color: transparent
+    box-shadow: none
+    color: $input-color
+
+.paper-form
+    .columns
+        border-top: 3px solid $input-color
+    @media screen and (min-width: 768px)
+        .breakrow
+            flex: none 
+            width: 100%
+            visibility: hidden
+            margin-top: -1000px
+    .column:hover
+        background-color: #fffded
+    .column.is-focusing
+        background-color: #fffad4
+        &:hover
+            background-color: #fffad4
+        label
+            color: #262626
+    .column
+        border: 0.5px solid black
+        padding-bottom: .3em !important
+        cursor: text
+        &:hover
+            background-color: #fffded
+        label.label
+            color: #484848
+            font-weight: normal
+            text-transform: uppercase
+            cursor: text
+            font-size: $label-font-size
+            margin-left: 10px
+            margin-top: 0.5rem
+            padding-left: 0px
+        input[type='text']
+            +_base_input_reset()
+            margin-top: -0.3em
+            width: $gap-width
+        textarea.textarea
+            +_base_input_reset()
+            padding-left: 0px
+            padding-bottom: 0.3em
+            min-width: $gap-width
+            width: $gap-width
+            color: black
+            min-height: 2.7em !important
+        select
+            font-size: $input-font-size
+            margin-left: $input-margin-left
+            width: $gap-width
+            cursor: pointer
+        input[type='checkbox'], input[type='radio']
+            font-size: $input-font-size
+            margin-left: $input-margin-left
+        label.checkbox, label.radio
+            margin-top: 0.3em
+        .control
+            min-height: $control-height
+        .control:first-child
+            padding: 0.5em
+        input ~ .help.is-danger
+            position: absolute
+            padding: 0px
+            margin: 0px
+            margin-top: -1.0em
+            margin-left: 1em
