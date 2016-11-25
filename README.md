@@ -1,4 +1,4 @@
-# DJing - mixing awesoweness.
+# DJing - mixing awesomeness.
 
 [Burger Right Menu](https://jingz.github.io/djing/burger_right_menu.html)
 
