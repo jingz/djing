@@ -1,4 +1,4 @@
-# DJing - mixing awesoweness.
+ DJing - mixing awesoweness.
 
 [Burger Right Menu](https://jingz.github.io/yourtemplates/burger-right-menu.html)
 starter page with burger style menu in the right page
@@ -11,7 +11,7 @@ in the box
 ---
 
 
-[paperform](https://jingz.github.io/yourtemplates/burger-right-menu.html)
+[paperform](https://jingz.github.io/yourtemplates/paperform.html)
 form that feel like paper. inspired by [gridform](https://github.com/kumailht/gridforms)
 
 in the box
