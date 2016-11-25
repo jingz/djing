@@ -1,6 +1,6 @@
 # DJing - mixing awesoweness.
 
-[Burger Right Menu](https://jingz.github.io/djing/burger-right-menu.html)
+[Burger Right Menu](https://jingz.github.io/djing/burger_right_menu.html)
 
     starter page with burger style menu in the right page
 
