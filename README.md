@@ -10,9 +10,9 @@ in the box
 
 ---
 
-[paperform](https://jingz.github.io/djing/paperform.html)
+[paperform](https://jingz.github.io/djing/paperform.html) - inspired by [gridform](https://github.com/kumailht/gridforms)
 
-    form that feel like paper. inspired by [gridform](https://github.com/kumailht/gridforms)
+    form that feel like paper.
 
 in the box
 - [bulma css](http://bulma.io)
