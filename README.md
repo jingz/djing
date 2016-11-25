@@ -1,7 +1,4 @@
-# DJing - a collection of mixing awesoweness.
-
-a collection of starter templates exmaples with minimal dependency.
-
+# DJing - mixing awesoweness.
 
 [Burger Right Menu](https://jingz.github.io/yourtemplates/burger-right-menu.html)
 starter page with burger style menu in the right page
