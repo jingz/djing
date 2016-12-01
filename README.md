@@ -17,3 +17,12 @@ in the box
 in the box
 - [bulma css](http://bulma.io)
 - [flatpickr](https://chmln.github.io/flatpickr/)
+
+---
+
+[datatable](https://jingz.github.io/djing/datatable.html)
+
+    compact data table
+
+in the box
+- [bulma css](http://bulma.io)
