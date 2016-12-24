@@ -5,17 +5,60 @@
     <link rel="stylesheet" href="./libs/bulma.css" type="text/css" media="screen" charset="utf-8">
     <title>Profile</title>
     <style type="text/css" media="screen">
-.card {
-    border-top: 5px solid black;
-}
+    .card {
+        border-top: 5px solid black;
+    }
     </style>
+
+    <style type="text/css" media="print">
+    body {
+        font-family: Platino Linotype, Palatino, serif;
+        font-size: 14px;
+        line-height: 1.3rem;
+    }
+
+    #showcase {
+        display: none;
+    }
+
+    #introduce {
+        float: left;
+        margin-right: 2em;
+    }
+
+    #introduce img {
+        width: 100px !important;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    h1.title.is-1 {
+        font-size: 1.5em;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    #personal-info {
+        float: left;
+        width: 80%;
+    }
+
+    #work-exp {
+        float: left;
+        width: 80%
+    }
+    </style>
+
 </head>
 <body>
    <div class="container">
        <div class='columns'>
-           <div class='column is-3 section'>
-
-               <div class="card">
+           <div id='introduce' class='column is-3 section'>
+               <div id='personal-info' class="card">
                    <div class="card-image">
                        <figure class="image">
                            <img src="./libs/profile.jpg">
@@ -52,7 +95,7 @@
                            <p>
                                <strong>Business Domains</strong><br/>
                                Financial, Manufacturing, E-commerce, Business Process Management,
-                               <a href='https://github.com/jingz/CMMS'>Maintaintenance System</a>
+                               <a href='https://github.com/jingz/CMMS'>Maintenance System</a>
                            </p>
                        </div>
                        <hr/>
@@ -67,9 +110,10 @@
                        <div class='content is-small'>
                            <ul>
                                <li>Email: wsaryoo@gmail.com</li>
-                               <li><a href='https://github.com/jingz'>Github: jingz@github.com</a></li>
-                               <li><a href='https://twitter.com/wsaryoo'>Twitter</a></li>
-                               <li><a href='https://www.linkedin.com/in/sarunyoo-chobpanich-b36662107?trk=nav_responsive_tab_profile'>Linkedin</a></li>
+                               <li><a href='https://github.com/jingz' target="_blank">Github: jingz@github.com</a></li>
+                               <li><a href='https://twitter.com/wsaryoo' target='_blank'>Twitter: @wsaryoo</a></li>
+                               <li><a href='http://stackoverflow.com/users/490833/jing' target="_blank">StackOverflow</a></li>
+                               <li><a href='https://www.linkedin.com/in/sarunyoo-chobpanich-b36662107?trk=nav_responsive_tab_profile' target="_blank">Linkedin</a></li>
                                <li>Tel: 090-976-1360</li>
                            </ul>
                        </div>
@@ -80,7 +124,8 @@
                </div>
            </div>
 
-           <div class='column section'>
+
+           <div id='work-exp' class='column section'>
                <div class='container'>
                    <h1 class="title">Software Engineer</h1>
                    <h1 class="subtitle">MFEC - July 2011 – Present (5 years 6 months)Bangkok, Jatujak</h1>
@@ -122,7 +167,7 @@
                    <hr/>
                </div>
 
-               <div class='columns is-multiline'>
+               <div id='showcase' class='columns is-multiline'>
 
                <div id='aboss' class='card column is-half'>
                    <div class='card-image'>
