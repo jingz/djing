@@ -112,8 +112,8 @@ window.App = {
 
         // enter to fetch photos
         self.jqPhotoLocationInput.keydown(function(e){
-            if(e.keyCode == 13){
-                // self.fetchPhotos();
+            if(e.keyCode == 13 && $(this).val() == ''){
+                self.fetchPhotos();
                 return false;
             }
         });
