@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pickring</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./flickr-photo-pickr.css" type="text/css" media="screen" charset="utf-8">
+</head>
+
+<body onload='javascript:App.init();'> <!-- simple init app script -->
+    <div id='app'>
+        <section id='map-wrapper' class='right-side'>
+            <form id='search-form'>
+                <input id='photo-title' 
+                       class='search' 
+                       value=''
+                       title='Please enter photo title'
+                       placeholder='Photo (i.e. Dog)' type='text' />
+                <input id='photo-location' 
+                       class='search' 
+                       title='Please enter location'
+                       placeholder='in (Bangkok, Thailand)' type='text' />
+                <button id='search-btn' title='Search Photo'>&#128269;</button>
+                <a class='help' 
+                   title='You can change search area on the map by click-and-hold for a second on any position.' 
+                   onclick='javascript:alert(this.title)'/>&#63;</a>
+            </form>
+            <div id="map"></div> 
+        </section> 
+
+        <section id='image-gallery'>
+            <!-- exmaple format
+            <div class='image-wrapper'> <img class='t' src='./images/face-tiger.jpg' > </div>
+            -->
+            <div id='photo-info'
+                class='image-wrapper is-info'>
+                <p>Search Photo There &rarr;</p>
+            </div>
+            <div id='more-photo'
+                 title='load more photos'
+                class='image-wrapper is-button'>
+                <p></p>
+            </div>
+            <div id='clear-photo' 
+                 class='image-wrapper is-button is-danger'
+                 title='remove all photos'
+                 onclick='javascript:confirm("Are you sure to clear all photos ?") && App.clearAllPhotos();'>
+                <p>CLEAR ALL PHOTOS</p>
+            </div>
+        </section>
+
+        <!-- Original Image Container -->
+        <div id='original-image-container'
+             onclick='javascript:this.style.visibility="hidden";App.jqOriginalImageContainer.data("photo").flash();'>
+            
+            <div id='original-image-wrapper'>
+                <img id='original-image' src='' /> 
+            </div>
+
+            <div id='original-image-detail'> </div>
+        </div>
+    </div>
+    <script src="./app.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=App.createMap&libraries=places"></script>
+</body>
+</html>
