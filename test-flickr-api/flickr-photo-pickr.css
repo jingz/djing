@@ -213,6 +213,7 @@ form#search-form {
     padding: 0.5rem;
     margin: 0.3rem;
     background-color: transparent;
+    font-size: 1.2rem;
 }
 
 form#search-form input[type=text] {
@@ -294,5 +295,46 @@ form#search-form .help:hover {
 
     #photo-info p:after {
         content: '  ↑';
+    }
+
+    #original-image-container {
+        flex-direction: column-reverse;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #original-image {
+        max-width: 100vw;
+        max-height: 50vh;
+    }
+
+    #original-image-detail {
+        width: 80vw;
+        height: 50vh;
+        margin: 0px;
+    }
+
+    #original-image-wrapper {
+        width: 100vw;
+    }
+
+    form#search {
+        font-size: 1rem;
+    }
+
+    form#search-form input[type="text"] {
+        font-size: 1rem;
+        padding: 0px;
+    }
+
+    form#search-form #search-btn {
+        font-size: 1rem;
+        margin: 0px;
+    }
+
+    form#search-form .help {
+        font-size: 1.2rem;
+        width: 1.5rem;
+        margin: 0px;
     }
 }
