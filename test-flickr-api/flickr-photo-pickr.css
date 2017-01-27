@@ -276,7 +276,7 @@ form#search-form .help:hover {
 }
 
 /* Simple Support Mobile */
-@media (max-width: 600px){
+@media (max-width: 700px){
     #map-wrapper {
         width: 100vw;
         height: 50vh;
