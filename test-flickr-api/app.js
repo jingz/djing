@@ -353,7 +353,7 @@ window.App = {
            this.photos.pop().remove();
         }
         this._clearPagination();
-        this.notify("Search Photo There &rarr;");
+        this.notify("Search Photo There");
         this.refreshPhotoActions();
     },
     _clearPagination: function(){
