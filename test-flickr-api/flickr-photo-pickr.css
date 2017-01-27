@@ -324,7 +324,7 @@ form#search-form .help:hover {
 
     form#search-form input[type="text"] {
         font-size: 1rem;
-        padding: 0px;
+        padding: 0.3rem;
     }
 
     form#search-form #search-btn {
