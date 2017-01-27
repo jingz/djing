@@ -138,6 +138,10 @@ window.App = {
             return false;
         });
 
+        self.jqNoPhotoNotify.click(function(){
+            self.jqPhotoTitleInput.focus();
+        });
+
         // refresh controls in photos
         self.refreshPhotoActions();
     },

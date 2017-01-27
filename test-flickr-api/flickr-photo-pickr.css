@@ -322,6 +322,16 @@ form#search-form .help:hover {
         margin: 0px;
     }
 
+    #original-image-detail .heading {
+        font-size: 1rem;
+    }
+
+    #original-image-detail p {
+        font-size: 1rem;
+        line-height: 1.2rem;
+        text-indent: 1.5rem;
+    }
+
     #original-image-wrapper {
         width: 100vw;
     }
