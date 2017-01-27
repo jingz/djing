@@ -305,14 +305,15 @@ window.App = {
             url: App.config.photoFetchUri,
             beforeSend: function() { 
                 self.disablePhotoSearchability(); 
-                self.jqMorePhotoBtn.css({'pointer-events': 'none'});
-                self.jqMorePhotoBtnText.text(moreText + ' ...');
+                self.jqMorePhotoBtn.addClass('is-loading');
+                // self.jqMorePhotoBtnText.text(moreText + ' ...');
             },
             data: opt
         })
         .done(function(response) {
             self.jqMorePhotoBtn.css({'pointer-events': 'auto'});
-            self.jqMorePhotoBtnText.text(moreText);
+            self.jqMorePhotoBtn.removeClass('is-loading');
+            // self.jqMorePhotoBtnText.text(moreText);
 
             // prevent doublick searching
             self.enablePhotoSearchability();
@@ -389,7 +390,7 @@ window.App = {
 function Photo(photo, cb) {
     var self = this;
 
-    // photo data from flickr
+    // simply store photo data from flickr
     this._data = photo;
 
     // basic photo template
@@ -403,7 +404,7 @@ function Photo(photo, cb) {
     this.thumbUri = `https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}_q.jpg`;
     this.originalUri = `https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.originalsecret}_o.jpg`;
 
-    // for dev
+    // for dev reduce load time
     // this.originalUri = "./images/learning_to_fly.jpg"
     var _thumbImg = new Image();
     _thumbImg.onload = function(){
@@ -538,11 +539,11 @@ Photo.prototype.remove = function(){
 }
 
 Photo.prototype.blinking = function(){
-    this.imageWrapperEl.classList.add('is-loading-image');
+    this.imageWrapperEl.classList.add('is-loading');
 }
 
 Photo.prototype.stopBlinking = function(){
-    this.imageWrapperEl.classList.remove('is-loading-image');
+    this.imageWrapperEl.classList.remove('is-loading');
 }
 // End Photo Class ----------------------------------
 })();
