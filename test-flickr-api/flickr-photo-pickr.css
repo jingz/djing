@@ -15,7 +15,7 @@ body {
 }
 
 
-.right-side {
+#map-wrapper {
     float: right;
     width: 600px;
     height: 100vh;
@@ -276,9 +276,7 @@ form#search-form .help:hover {
 
 /* Simple Support Mobile */
 @media (max-width: 600px){
-    body {overflow: scroll;}
-    
-    .right-side {
+    #map-wrapper {
         width: 100vw;
         height: 50vh;
     }
@@ -298,4 +296,3 @@ form#search-form .help:hover {
         content: '  ↑';
     }
 }
-
