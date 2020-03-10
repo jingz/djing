@@ -1,5 +1,12 @@
 # DJing - mixing awesomeness.
 
+
+[Flickr Find Photos](https://jingz.github.io/djing/flickr/index.html)
+
+    pure css and javascript.
+
+---
+
 [Burger Right Menu](https://jingz.github.io/djing/burger_right_menu.html)
 
     starter page with burger style menu in the right page
