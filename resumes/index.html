@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <link rel="stylesheet" href="./libs/bulma.css" type="text/css" media="screen" charset="utf-8">
-    <title>Profile</title>
+    <title>Sarunyoo Chobpanich Profile</title>
     <style type="text/css" media="screen">
     .card {
         border-top: 5px solid black;
@@ -12,17 +12,46 @@
 
     <style type="text/css" media="print">
     body {
-        font-family: Platino Linotype, Palatino, san-serif;
+        /*font-family: Platino Linotype, Palatino, sans-serif;*/
+        font-family: Arial, Helvetica, sans-serif;
         font-size: 14px;
         line-height: 1.3rem;
     }
 
+    #name {
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+
+    #work-exp-title {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
     h1 {
         font-size: 1em;
+        line-height: 0.75;
     }
 
     h2 {
         font-size: 0.75em;
+        line-height: 0.75;
+    }
+
+    ul li {
+        line-height: 1.2;
+    }
+
+    .subtitle {
+        font-weight: 400;
+    }
+
+    hr {
+        border: 1px dashed gray;
+    }
+
+    #profile-picture {
+        float: left;
     }
 
     #work-exp img {
@@ -44,20 +73,19 @@
        <div class='columns'>
            <div id='introduce' class='column is-3 section'>
                <div id='personal-info' class="card">
-                   <div class="card-image" style='transform: rotate(90deg) translateX(40px); border: 3px solid #000;'>
+                   <div id='profile-picture' class="card-image">
                        <figure class="image">
                            <img src="./libs/profile2.jpg">
                        </figure>
                    </div>
-                   <br/>
-                   <br/>
-                   <br/>
                    <div class="card-content">
-                       <h1 class='title is-4'>Sarunyoo Chobpanich (11 years of experienced)</h1>
-                       <h1 class='subtitle is-6'>Full-Stack Web Engineer, Age 33, Bangkok</h1>
+                       <h1 id='name' class='title is-4'>Sarunyoo Chobpanich</h1>
+                       <h1 class='subtitle is-6'>Full-Stack Web Engineer, Age 34, Bangkok</h1>
+                       <h1 class='subtitle is-6'>(12 years of experienced)</h1>
+
                        <div class="content">
-                           <strong>Overview</strong>
                            <p>
+                               <strong>Overview</strong>
                                A Software Engineer focusing on simplicity and productivity.
                                <br/>
                            </p>
@@ -65,7 +93,7 @@
                                <strong>Experienced Backend - Tech</strong><br/>
                                Python, Flask,
                                Ruby, RubyOnRails, Sinatra,
-                               Nodejs, ExpressJS, Hapi,
+                               Nodejs, ExpressJS, Hapi, NuxtJS, NextJS,
                                PHP, CakePHP, SQL
                            </p>
                            <p>
@@ -75,27 +103,30 @@
                            </p>
                            <p>
                                <strong>Experienced Mobile - Tech</strong><br/>
-                               RubyMotion (iOS - framework), QuasarFramework (Mobile Framework),
+                               Objective-C, RubyMotion (iOS - framework), QuasarFramework (Mobile Framework),
                                Cordova (Hybrid-Mobile Framework)
                            </p>
                            <p>
                                <strong>Experienced System - Tech</strong><br/>
-                               Linux/Mac machine, Vim (Editor), Docker, PostgreSQL, MSSQL, MySQL
+                               Linux/Mac machine, Vim (Editor), Docker, PostgreSQL, MSSQL, MySQL, MongoDB,
                                Nginx, Gunicorn, Supervisord
                            </p>
                            <p>
                                <strong>Experienced Business Domains</strong><br/>
-                               Finance, Manufacturing, E-commerce, Business Process Management,
+                               Finance, Manufacturing, E-commerce, Business Process Management, Media
                                <a href='https://github.com/jingz/CMMS'>Maintenance System</a>, Start Up
                            </p>
                        </div>
                        <hr/>
-                       <strong>Education</strong>
-                       <p> Bachelor of Engineering (B.Eng.), Computer engineering Thammasat University </p>
-                       <p><small>Apr. 2008, Thammasat University, Thailand, GPA.3.06</small></p>
-                       <br/>
-                       <strong>Research Project</strong>
-                       <p>Embedded software developer of “Time control and safety system for public bus transportation”</p>
+                       <p>
+                           <strong>Education</strong><br/>
+                           Bachelor of Engineering (B.Eng.), Computer engineering Thammasat University<br/>
+                           <small>Apr. 2008, Thammasat University, Thailand, GPA.3.06</small>
+                       </p>
+                       <p>
+                           <strong>Research Project</strong></br>
+                           Embedded software developer of “Time control and safety system for public bus transportation”
+                       </p>
                        <hr/>
                        <strong>Contact & Link</strong>
                        <div class='content is-small'>
@@ -109,51 +140,66 @@
                            </ul>
                        </div>
                        <hr/>
-                       <strong>Hobbies and Interests</strong>
-                       <p>Guitar / Running</p>
+                       <p>
+                           <strong>Hobbies and Interests</strong><br/>
+                           Guitar / Running
+                       </p>
                    </div>
                </div>
            </div>
 
 
            <div id='work-exp' class='column section'>
+               <h1 id='work-exp-title' class='title is-3 has-text-gray' style='font-weight: 500; text-decoration: underline;'>Work Experience</h1>
+
                <div class='container'>
-                   <h1 class="title">Software Solution Architect</h1>
-                   <h1 class="subtitle"><a href='https://sennalabs.com/' target="_blank">Sennalabs</a> - Aug 2019 – (Present) Bangkok, Asok</h1>
+                   <h1 class="title is-4">Senior Web Engineer</h1>
+                   <h1 class="subtitle"><a href='https://appsynth.net/' target="_blank">Appsynth</a> - Jan 2020 – (Present) Bangkok, Ratchada</h1>
                    <div class='content'>
                        <ul>
-                           <li>Refine Real-Time Miner Monitoring and Notification System (Banpu Project).</li>
-                           <li>Established testing solution for real time notification events triggering.</li>
-                           <li>Refactoring API service and backgroud jobs applications.</li>
-                           <li>Established PDF Miners end-of-day reports scrapping.</li>
-                           <li>Revise Push notification system for PWA using Azure Notification Hub.</li>
+                           <li>Part of a Team to develop <strong>TrueID International Project</strong>.</li>
+                           <li>Part ot a Team as a Frontend, develop <strong>TrueID InTrend Project</strong>.</li>
                        </ul>
                    </div>
                    <hr/>
 
-                   <h1 class="title">Software Solution Architect</h1>
+                   <h1 class="title is-4">Software Solution Architect</h1>
+                   <h1 class="subtitle"><a href='https://sennalabs.com/' target="_blank">Sennalabs</a> - Aug 2019 – Dec 2019 Bangkok, Asok</h1>
+                   <div class='content'>
+                       <ul>
+                           <li>Refine Real-Time <strong>Miner Monitoring and Notification System</strong> (Banpu Project).</li>
+                           <li>Established testing solution for real time notification events triggering.</li>
+                           <li>Refactoring API service and backgroud jobs applications.</li>
+                           <li>Established PDF Miners end-of-day reports scrapping.</li>
+                           <li>Revise Push notification system for progressive web application (PWA) using Azure Notification Hub.</li>
+                       </ul>
+                   </div>
+                   <hr/>
+
+                   <h1 class="title is-4">Software Solution Architect</h1>
                    <h1 class="subtitle"><a href='https://mfec.co.th.co/' target="_blank">MFEC</a> - Dec 2017 – July 2019 Bangkok, Chatujak</h1>
                    <div class='content'>
                        <ul>
-                           <li>Lead Backend API Team to develop backend non-finacial services for T-Connect (Tbank mobile app)</li>
-                           <li>Develop Backend service API for Micro Saving Application (KEBHOM) [Saving Money Application – SCB Abacus]</li>
-                           <li>Design, Leading and Coaching Team to build <a href='#agrichain'>Agriculture Product Market Price</a></li>
-                           <li>Design, Leading and Coaching Team to build <a href='#dca'>Data Manually Cleansing Application On Web</a></li>
+                           <li>Lead Backend API Team to develop backend <strong>non-finacial services for T-Connect</strong> (Tbank mobile app)</li>
+                           <li>Develop Backend service API for <strong>Micro Saving Application</strong> (KEBHOM) [Saving Money Application – SCB Abacus]</li>
+                           <li>Design, Leading and Coaching Team to build <a href='#agrichain'>Agriculture Product Market Price Web Application</a></li>
+                           <li>Design, Leading and Coaching Team to build <a href='#dca'>Data Manually Cleansing Web Application</a></li>
                            <li>Coaching Frontend and Backend developers to build modern web application.</li>
                            <li>Coaching basic web application deployment by using docker for Team.</li>
                            <li>Coaching basic python web application development.</li>
-                           <li>Design, Develop and Coaching for Chatbot Entreprise Management. The main features are bot conversation flow designer with pluggable into muti channels and statistic reports</li>
+                           <li>Design, Develop and Coaching for <strong>Chatbot Enterprise Management</strong>.
+                               The main features are bot conversation flow designer with pluggable into muti channels and statistic reports</li>
                            <li>Selecting Tools for building python web application for Team.</li>
                            <li>Building lean software development process for Team</li>
                        </ul>
                    </div>
                    <hr/>
 
-                   <h1 class="title">Ruby On Rails Developer</h1>
+                   <h1 class="title is-4">Ruby On Rails Developer</h1>
                    <h1 class="subtitle"><a href='https://seekster.co/' target="_blank">Seekster</a> - Aug 2017 – (3 months) Bangkok, KlongToey</h1>
                    <div class='content'>
                        <ul>
-                           <li>Refactoring User Authentication System and Migrate old data for compatibility with the existing client side applications</li>
+                           <li>Refactoring <strong>User Authentication System</strong> and Migrate old data for compatibility with the existing client side applications</li>
                            <li>Develop APIs Integration testing</li>
                            <li>Develop APIs backend server as business needed to connect with mobile and web application</li>
                            <li>Implement elasticsearch integration with backend system</li>
@@ -164,7 +210,7 @@
                    </div>
                    <hr/>
 
-                   <h1 class="title">Front-End Developer</h1>
+                   <h1 class="title is-4">Front-End Developer</h1>
                    <h1 class="subtitle"><a href='https://zeekdoc.com/' target="_blank">ZeekDoc</a> - June 2017 – (2 months) Bangkok</h1>
                    <div class='content'>
                        <ul>
@@ -174,7 +220,7 @@
                    </div>
                    <hr/>
 
-                   <h1 class="title">UX / UI Front-End Developer</h1>
+                   <h1 class="title is-4">UX / UI Front-End Developer</h1>
                    <h1 class="subtitle">Jetabroad - March 2017 – May 2017 (3 months) Bangkok, Pleanchit</h1>
                    <div class='content'>
                        <ul>
@@ -184,18 +230,18 @@
                    </div>
                    <hr/>
                    
-                   <h1 class="title">Senior Software Engineer</h1>
+                   <h1 class="title is-4">Senior Software Engineer</h1>
                    <h1 class="subtitle"><a href='http://www.mfec.co.th/' target="_blank">MFEC</a> - July 2011 – Feb 2017 (5 years 6 months) Bangkok, Chatujak</h1>
                    <div class='content'>
                        <ul>
                        <li>Design and drafting high performance data pushing on web application for front stock trading.</li>
                        <li>Design and develop File Management Application (iOS App) and syncing with Microsoft SharePoint APIs</li>
-                       <li>Design and develop <a href='#aboss'>Brokerage Back Office Web Application</a> - the back office solution for security stock brokering business in SET market with many modules such as Receive Payment, Portfolio and Report system used by every module</li>
+                       <li>Design and develop <a href='#aboss'>Brokerage Back Office Web Application</a> (Augstrom Solution) - the back office solution for security stock brokering business in SET market with many modules such as Receive Payment, Portfolio and Report system used by every module</li>
                        <li>Initiate and develop new rapid application development framework for auto generating web GUI which is heavily used in Brokerage Back Office project</li>
                    </div>
 
                    <hr/>
-                   <h1 class="title">Software Engineer</h1>
+                   <h1 class="title is-4">Software Engineer</h1>
                    <h1 class="subtitle">Fabrinet - July 2008 – July 2011 (3 years 1 month) Pathumtani, Rangsit</h1>
                    <div class='content'>
                        Design and develop Internal web applications as following
@@ -674,6 +720,7 @@
 
 
                </div>
+
            </div>
        </div>
    </div>
