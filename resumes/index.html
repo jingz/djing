@@ -33,6 +33,12 @@
       font-size: 2rem;
       font-weight: 500;
     }
+    
+    .hilight-header {
+      font-size: 2rem;
+      font-weight: 500;
+      text-decoration: underline;
+    }
 
     h1 {
       font-size: 1em;
@@ -75,6 +81,7 @@
     </style>
 
   </head>
+
   <body>
     <div class="container">
       <div class='columns'>
@@ -82,18 +89,18 @@
           <div id='personal-info' class="card">
             <div id='profile-picture' class="card-image">
               <figure class="image">
-                <img src="./libs/profile2.jpg">
+                <img src="./libs/profile3.jpg">
               </figure>
             </div>
             <div class="card-content">
               <h1 id='name' class='title is-4'>Yongchayut Theerachbawontat</h1>
-              <h1 class='subtitle is-6'>Full-Stack Web Engineer, Age 34, Bangkok</h1>
-              <h1 class='subtitle is-6'>(13 years of experienced)</h1>
+              <h1 class='subtitle is-6'>Full-Stack Web Engineer, Age 35, Bangkok</h1>
+              <h1 class='subtitle is-6'>(14 years of experienced)</h1>
 
               <div class="content">
                 <p>
                 <strong>Overview</strong>
-                A Software Engineer focusing on simplicity and productivity.
+                A Software Engineer focusing on simplicity, productivity and maintainable yet robustness.
                 <br/>
                 </p>
                 <p>
@@ -111,7 +118,8 @@
                 <p>
                 <strong>Experienced Mobile - Tech</strong><br/>
                 Objective-C, RubyMotion (iOS - framework), QuasarFramework (Mobile Framework),
-                Cordova (Hybrid-Mobile Framework), Mobile-First Progressive Web App (PWA)
+                Cordova (Hybrid-Mobile Framework), Mobile-First Progressive Web App (PWA),
+                Trusted Web Activities (TWA)
                 </p>
                 <p>
                 <strong>Experienced System - Tech</strong><br/>
@@ -121,7 +129,7 @@
                 <p>
                 <strong>Experienced Business Domains</strong><br/>
                 Finance, Manufacturing, E-commerce, Business Process Management, Media
-                <a href='https://github.com/jingz/CMMS'>Maintenance System</a>, Start Up
+                <a href='https://github.com/jingz/CMMS'>Maintenance System</a> and Start Up
                 </p>
               </div>
               <hr/>
@@ -157,22 +165,23 @@
 
 
         <div id='work-exp' class='column section'>
-          <h1 id='work-exp-title' class='title is-3 has-text-gray' style='font-weight: 500; text-decoration: underline;'>Work Experience</h1>
+          <h1 class='title is-3 has-text-gray' style='font-weight: 500; text-decoration: underline;'>Work Experience</h1>
 
           <div class='container'>
             <h1 class="title is-4">Senior Web Engineer</h1>
             <h1 class="subtitle"><a href='https://appsynth.net/' target="_blank">Appsynth</a> - Jan 2020 – (Present) Bangkok, Ratchada</h1>
             <div class='content'>
               <ul>
-                <li>Build PWA Mobile-First <strong>TrueID regional web portal</strong> for Indonesia and Philippines.</li>
-                <li>Integate micro-services with existing TrueID internal / on-prem services.</li>
+                <li>Build PWA Mobile-First <strong>TrueID regional web portal</strong> for Indonesia, Philippines, Cambodia and Vietnam.</li>
+                <li>Ensure the web application working on major browsers, Safari and Chrome.</li>
+                <li>Integate micro-services with TrueID internal / on-prem services.</li>
                 <li>Integate Authentication service with Okta and Google CICP.</li>
-                <li>Develop SEO and Analytical tracking using Google Tag Manger.</li>
+                <li>Work with the product owners to implement SEO and Analytical tracking using Google Tag Manger.</li>
                 <li>Develop Offline features with caching technique on browser (PWA).</li>
                 <li>Develop working progressive web app (PWA) into an Android application (TWA).</li>
-                <li>Help the team monitor and investigate production issues.</li>
-                <li>Help team to design solution feature by feature.</li>
-                <li>Work on Agile paradigm, stanup meeting, sprint planning, grooming, retrospective.</li>
+                <li>Optimise web performance according to google web vitals metrics and lighthouse score.</li>
+                <li>Monitor and investigate production issues.</li>
+                <li>Work on Agile paradigm, stanup meeting, sprint planning, grooming and retrospective.</li>
               </ul>
             </div>
             <hr/>
@@ -181,9 +190,9 @@
             <h1 class="subtitle"><a href='https://sennalabs.com/' target="_blank">Sennalabs</a> - Aug 2019 – Dec 2019 Bangkok, Asok</h1>
             <div class='content'>
               <ul>
-                <li>Refine Real-Time <strong>Miner Monitoring and Notification System</strong> (Banpu Project).</li>
+                <li>Develop Real-Time <strong>Miner Monitoring and Notification System</strong> (Banpu Company Project).</li>
                 <li>Established testing solution for real time notification events triggering.</li>
-                <li>Refactoring API service and backgroud jobs applications.</li>
+                <li>Refactoring API services and backgroud jobs applications.</li>
                 <li>Established PDF Scrapping of miners end-of-day reports. (Python, ApacheTika)</li>
                 <li>Revise Push notification system for progressive web application (PWA) using Azure Notification Hub.</li>
               </ul>
@@ -196,7 +205,7 @@
               <ul>
                 <li>Design, Develop and Coaching for <strong>Chatbot Enterprise Management</strong>.
                   The main features are bot conversation flow designer with pluggable into muti channels and statistic reports</li>
-                <li>Lead Backend API Team to develop backend <strong>non-finacial services for T-Connect</strong> (Tbank mobile app)</li>
+                <li>Lead Backend API Team to develop backend <strong>non-finacial services for T-Connect</strong> (Thanachart bank mobile app)</li>
                 <li>Develop Backend service API for <strong>Micro Saving Application</strong> (KEBHOM) [Saving Money Application – SCB Abacus]</li>
                 <li>Coaching Team to build <a href='#agrichain'>Agriculture Product Market Price Web Application</a></li>
                 <li>Coaching Team to build <a href='#dca'>Data Manually Cleansing Web Application</a></li>
@@ -270,7 +279,53 @@
             <hr/>
           </div>
 
+          <div id='side-projects' class='section column' style='background-color: #eee; border-radius: 6px;'>
+            <h1 class='title is-3 has-text-gray' style='font-weight: 500; text-decoration: underline; margin-left: 0;'>Side Projects</h1>
+            <div class='container'>
+              <h1 class="title is-4"><a href='#tlsc'>Thai Law Search Center</a></h1>
+              <h2 class="subtitle">Mar 2020 – (Present) – <a href='https://tlsc.app' target='_blank'>https://tlsc.app</a></h2>
+              <div class='content'>
+                A solo-built application for searching thai laws, final judgments with providing easy to use research tools.
+                <ul>
+                  <li>Mobile-first design.</li>
+                  <li>Design and implement the application.</li>
+                  <li>Optimise searching performance.</li>
+                  <li>Integrate with social logins.</li>
+                  <li>Design with performance in mind.</li>
+                  <li>Setup small email server.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <hr/>
+
+          <h1 class='title is-3' style='font-weight: 500; text-decoration: underline;'>Show Cases</h1>
+          <br/>
           <div id='showcase' class='columns is-multiline'>
+
+            <div id='tlsc' class='card column is-half'>
+              <div class='card-image'>
+                <figure class='image'>
+                  <img src='./libs/tlsc.png'/>
+                </figure>
+              </div>
+
+              <div class='card-content'>
+                <div class='level'>
+                  <div class='level-left'>
+                    [Mar 2020]
+                  </div>
+                  <div class='level-right'>
+                    <strong class='title is-3'>Thai law search center</strong>
+                  </div>
+                </div>
+                <p>An application aim to be a searching center for Thai laws with providing research tools.</p>
+                <hr/>
+                <strong>Tech</strong>
+                <p>Python, Flask, Postgresql, Javascript, CSS</p>
+              </div>
+            </div>
 
             <div id='trueidid' class='card column is-half'>
               <div class='card-image'>
